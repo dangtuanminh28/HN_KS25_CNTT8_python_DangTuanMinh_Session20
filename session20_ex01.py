@@ -43,10 +43,11 @@ def print_kda_leaderboard(data):
             print(f"Tuyển thủ {name} có chỉ số KDA là: {kda}")
             
         except ZeroDivisionError:
-            print(f"[{name}]: KDA Hoàn hảo (Perfect Game)!")
+            print(f"Tuyển thủ [{name}] KDA Hoàn hảo (Perfect Game)!")
             continue            
         except ValueError:
-            print(f"[{name}]: Lỗi dữ liệu không hợp lệ!")
+            print(f"Tuyển thủ [{name}] Lỗi dữ liệu không hợp lệ!")
             continue
 
 print_kda_leaderboard(player_list)
+print("--- HOÀN TẤT ---")
